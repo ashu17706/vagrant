@@ -20,5 +20,6 @@ Vagrant.configure(2) do |config|
      sudo apt-get update
      sudo apt-get install git
    SHELL
-
+  
+  config.vm.provision :shell, :path => "jdk1.7_installation.sh" 
 end
